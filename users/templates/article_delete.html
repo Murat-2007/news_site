@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Sil</h1>
+<form action="" method="POST">{% csrf_token %}
+    <p>"{{ article.title }}" haberini silmek istediginizden emin misiniz?</p>
+    <button class="btn btn-info ml-2" type="submit">Onayla</button>
+</form>
+
+{% endblock content %}

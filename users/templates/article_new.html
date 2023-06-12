@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+<div class="col-lg-8 offset-md-1">
+    
+<h1>Yeni Haber</h1>
+<form action="" method="POST">{% csrf_token %}
+    {{ form.as_p }}
+<button class="btn btn-success ml-5" type="submit">Kaydet</button>
+</form>
+</div>
+</div>
+{% endblock content %}
